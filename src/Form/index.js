@@ -22,26 +22,46 @@ const Form = () => (
       </p>
       <p>
         <label>
-          <span className="form__text">
-            Value:</span>
-          <input className="form__field" type="number" min="0" required
-            placeholder="Input the amount of currency" autoFocus />
+          <span
+            className="form__text">Value:
+          </span>
+          <input
+            className="form__field" type="number" min="0"
+            required
+            placeholder="Input the amount of currency"
+            autoFocus
+          />
         </label>
       </p>
       <p>
         <label>
-          <span className="form__text">
-            Currency rate:</span>
-          <input className="form__field" type="number" min="0.0001" step="0.0001" required
-            placeholder="Input the current rate" />
+          <span
+            className="form__text">Currency rate:
+          </span>
+          <input
+            className="form__field"
+            type="number"
+            min="0.0001"
+            step="0.0001"
+            required
+            placeholder="Input the current rate"
+          />
         </label>
       </p>
       <p>
-        <span className="form__text">
-          Calculated value:</span> <strong>N/A</strong>
+        <span
+          className="form__text">Calculated value:
+        </span>
+        <strong>
+          N/A
+        </strong>
       </p>
-      <button className="button">Recalculate your currency</button>
-      <button className="button" type="reset">Clean</button>
+      <button
+        className="button">Recalculate your currency
+      </button>
+      <button
+        className="button" type="reset">Clean
+      </button>
     </fieldset>
   </form>
 );
