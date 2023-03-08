@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "./style.css";
 
 
-const Form = (value) => {
-  const [currencyValue, setcurrencyValue] = useState("");
+const Form = (result) => {
+  const [currencyValue, setCurrencyValue] = useState("");
   const [rate, setRate] = useState("");
 
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    value = currencyValue * rate;
-    setcurrencyValue("");
+    result = currencyValue * rate;
+    setCurrencyValue("");
     setRate("");
-    console.log(value);
+    console.log(result.toFixed(4));
   };
 
   return (
@@ -47,7 +47,7 @@ const Form = (value) => {
               required
               placeholder="Input the amount of currency"
               autoFocus
-              onChange={(event => setcurrencyValue(event.target.value))}
+              onChange={(event => setCurrencyValue(event.target.value))}
             />
           </label>
         </p>
