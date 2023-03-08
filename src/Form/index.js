@@ -13,6 +13,7 @@ const Form = (result) => {
     setCurrencyValue("");
     setRate("");
     console.log(result.toFixed(4));
+
   };
 
   return (
@@ -72,8 +73,9 @@ const Form = (result) => {
           <span
             className="form__text">Calculated value:
           </span>
-          <strong>
-            N/A
+          <strong
+            value={result}
+          >
           </strong>
         </p>
         <button
