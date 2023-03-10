@@ -17,7 +17,9 @@ const Form = (result) => {
   };
 
   return (
-    <form>
+    <form
+      onSubmit={onFormSubmit}
+    >
       <fieldset>
         <legend>
           Currency converter:
@@ -79,7 +81,6 @@ const Form = (result) => {
           </strong>
         </p>
         <button
-          onClick={onFormSubmit}
           className="button">Recalculate your currency
         </button>
         <button
