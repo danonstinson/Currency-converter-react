@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import "./style.css";
+import Result from "../Result";
 
-
-const Form = (result) => {
-  const [currencyValue, setCurrencyValue] = useState("");
+const Form = (result, calculatedResult) => {
+  const [amount, setAmount] = useState("");
   const [rate, setRate] = useState("");
 
   const onFormSubmit = (event) => {
     event.preventDefault();
+    calculatedResult(amount, rate);
 
-    result = currencyValue * rate;
-    setCurrencyValue("");
-    setRate("");
+    // setAmount("");
+    // setRate("");
     console.log(result.toFixed(4));
-
   };
 
   return (
@@ -45,12 +44,13 @@ const Form = (result) => {
               className="form__text">Value:
             </span>
             <input
-              value={currencyValue}
+              value={amount}
               className="form__field" type="number" min="0"
               required
               placeholder="Input the amount of currency"
               autoFocus
-              onChange={(event => setCurrencyValue(event.target.value))}
+              onChange={({ target }) => setAmount(target.value)}
+              name="amount"
             />
           </label>
         </p>
@@ -67,19 +67,12 @@ const Form = (result) => {
               step="0.0001"
               required
               placeholder="Input the current rate"
-              onChange={(event => setRate(event.target.value))}
+              onChange={({ target }) => setRate(target.value)}
+              name="rate"
             />
           </label>
         </p>
-        <p>
-          <span
-            className="form__text">Calculated value:
-          </span>
-          <strong
-            value={result}
-          >
-          </strong>
-        </p>
+        <Result result={result} amount={amount} rate={rate}  />
         <button
           className="button">Recalculate your currency
         </button>
