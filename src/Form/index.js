@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import Result from "../Result";
 
-const Form = (result, calculatedResult) => {
+const Form = ({ result, calculatedResult }) => {
   const [amount, setAmount] = useState("");
   const [rate, setRate] = useState("");
 
@@ -72,7 +72,7 @@ const Form = (result, calculatedResult) => {
             />
           </label>
         </p>
-        <Result result={result} amount={amount} rate={rate}  />
+        <Result result={result} amount={amount} rate={rate} />
         <button
           className="button">Recalculate your currency
         </button>
