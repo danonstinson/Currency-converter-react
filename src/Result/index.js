@@ -1,6 +1,6 @@
 import React from "react";
 
-const Result = (result) => (
+const Result = ({ result }) => (
     < p className="form__text">
         Calculated value:
         <strong>
