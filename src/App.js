@@ -9,7 +9,7 @@ function App() {
   const [result, setResult] = useState("N/A");
 
   const calculatedResult = (amount, rate) => {
-    setResult(result => amount * rate)
+    setResult(result => (amount * rate).toFixed(2))
   };
 
   return (
