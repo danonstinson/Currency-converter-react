@@ -9,9 +9,8 @@ function App() {
   const [result, setResult] = useState();
 
   const calculatedResult = (amount, rate) => {
-    setResult({
-      targetAmount: amount * rate,
-    })
+    setResult(result => amount * rate
+    )
   };
 
   return (
