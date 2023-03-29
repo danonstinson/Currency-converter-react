@@ -73,9 +73,6 @@ const Form = ({ result, calculatedResult }) => {
         <button
           className="button">Recalculate your currency
         </button>
-        <button
-          className="button" type="reset">Clean
-        </button>
       </fieldset>
     </form>
   );
