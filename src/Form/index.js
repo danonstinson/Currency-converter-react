@@ -10,9 +10,6 @@ const Form = ({ result, calculatedResult }) => {
     event.preventDefault();
     calculatedResult(amount, rate);
 
-    // setAmount("");
-    // setRate("");
-    console.log(result.toFixed(4));
   };
 
   return (
