@@ -6,11 +6,10 @@ import { useState } from "react";
 
 
 function App() {
-  const [result, setResult] = useState();
+  const [result, setResult] = useState("N/A");
 
   const calculatedResult = (amount, rate) => {
-    setResult(result => amount * rate
-    )
+    setResult(result => amount * rate)
   };
 
   return (
