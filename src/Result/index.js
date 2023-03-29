@@ -4,7 +4,7 @@ const Result = ({ result }) => (
     < p className="form__text">
         Calculated value:
         <strong>
-            {result.targetAmount.toFixed(4)}
+            {result}
         </strong>
     </p >
 );
