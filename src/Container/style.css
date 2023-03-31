@@ -3,7 +3,6 @@
     max-width: 800px;
     margin: auto;
     overflow: auto;
-    resize: both;
     padding: 10px;
     background-color: hsl(0, 0%, 90%);
     line-height: 1.4;

@@ -47,7 +47,6 @@ const Form = ({ result, calculatedResult }) => {
               placeholder="Input the amount of currency"
               autoFocus
               onChange={({ target }) => setAmount(target.value)}
-              name="amount"
             />
           </label>
         </p>
@@ -65,11 +64,14 @@ const Form = ({ result, calculatedResult }) => {
               required
               placeholder="Input the current rate"
               onChange={({ target }) => setRate(target.value)}
-              name="rate"
             />
           </label>
         </p>
-        <Result result={result} amount={amount} rate={rate} />
+        <p>
+          <label className="form__result">
+            <Result result={result} amount={amount} rate={rate} />
+          </label>
+        </p>
         <button
           className="button">Recalculate your currency
         </button>
