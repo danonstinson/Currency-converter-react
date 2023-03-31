@@ -1,13 +1,16 @@
 # Demo
 ![Currency-converter-react](src/images/Currency-converter-react-screen.png)
 
+## Link
+https://danonstinson.github.io/Currency-converter-react/
 
-# Techology
+## Techology
 - HTML
 - CSS
 - Create-react-app
 - GIT
 - React js
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
