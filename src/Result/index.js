@@ -2,7 +2,7 @@ import React from "react";
 
 const Result = ({ result }) => (
     <>
-        < p className="form__text">
+        <p className="form__text">
             Calculated value:
         </p >
         <p>
