@@ -15,6 +15,7 @@ const Form = ({ result, calculatedResult }) => {
 
   return (
     <form
+      className="form"
       onSubmit={onFormSubmit}
     >
       <fieldset>
@@ -34,7 +35,7 @@ const Form = ({ result, calculatedResult }) => {
                 <option
                   key={currency.prefix}
                   value={currency.prefix}>
-                  {currency.prefix} {currency.rate}                  
+                  {currency.prefix} {currency.rate}
                 </option>
               ))}
             </select>
