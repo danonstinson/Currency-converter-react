@@ -7,7 +7,7 @@ const Result = ({ result }) => (
         </p >
         <p>
             <strong >
-                {result}
+                {result.result} {result.currency}
             </strong>
         </p>
     </>
