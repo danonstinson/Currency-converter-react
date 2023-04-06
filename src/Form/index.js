@@ -23,7 +23,7 @@ const Form = ({ result, calculatedResult }) => {
         </legend>
         <p>
           <label>
-            <span className="form__text">Currency:
+            <span className="form__text">Currency*:
             </span>
             <select
               className="form__field" name="currency"
@@ -34,7 +34,7 @@ const Form = ({ result, calculatedResult }) => {
                 <option
                   key={currency.prefix}
                   value={currency.prefix}>
-                  {currency.prefix}
+                  {currency.prefix} {currency.rate}                  
                 </option>
               ))}
             </select>
@@ -64,6 +64,9 @@ const Form = ({ result, calculatedResult }) => {
           className="button">Recalculate your currency
         </button>
       </fieldset>
+      <p>
+        *Accordingly to: Tabela nr 065/A/NBP/2023 z dnia 2023-04-03
+      </p>
     </form>
   );
 
