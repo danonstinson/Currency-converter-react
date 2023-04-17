@@ -1,7 +1,7 @@
 import Form from "./Form";
 import Container from "./Container";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./Container/Header";
+import Footer from "./Container/Footer";
 import { useState } from "react";
 import currencies from "./Currencies";
 
