@@ -1,9 +1,9 @@
-import Form from "./Form";
+import Form from "./Container/Form";
 import Container from "./Container";
 import Header from "./Container/Header";
 import Footer from "./Container/Footer";
 import { useState } from "react";
-import currencies from "./Currencies";
+import currencies from "./Container/Form/Currencies";
 
 function App() {
   const [result, setResult] = useState("N/A");
