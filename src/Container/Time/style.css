@@ -1,0 +1,4 @@
+.timer {
+  display: grid;
+  justify-content: end;
+}
