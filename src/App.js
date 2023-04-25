@@ -4,6 +4,7 @@ import Header from "./Container/Header";
 import Footer from "./Container/Footer";
 import { useState } from "react";
 import currencies from "./Container/Form/Currencies";
+import Time from "./Container/Time";
 
 function App() {
   const [result, setResult] = useState("N/A");
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <Container>
+      <Time />
       <Header />
       <section>
         <Form result={result} calculatedResult={calculatedResult} />
