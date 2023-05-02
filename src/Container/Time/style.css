@@ -1,4 +1,6 @@
 .timer {
   display: grid;
   justify-content: end;
+  font-family: monospace;
+  padding: 10px 0px;
 }
