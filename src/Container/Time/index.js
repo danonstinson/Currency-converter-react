@@ -5,7 +5,7 @@ const Time = () => {
   const [myDate, setMyDate] = useState(new Date());
 
   const showMyDate = (myDate) =>
-    myDate.toLocaleTimeString("pl-pl", { weekday: "long", day: "numeric", month: "long" })
+    myDate.toLocaleTimeString("pl-pl", { weekday: "long", day: "numeric", month: "long" });
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -18,9 +18,7 @@ const Time = () => {
   }, [myDate]);
 
   return (
-    <div
-      className="timer"
-    >
+    <div className="timer">
       Dzisiaj jest {showMyDate(myDate)}
     </div>
   );
